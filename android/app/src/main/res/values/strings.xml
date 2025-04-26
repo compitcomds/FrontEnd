@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">Doctoro</string>
+    <string name="title_activity_main">Doctoro</string>
+    <string name="package_name">com.doctoro.app</string>
+    <string name="custom_url_scheme">com.doctoro.app</string>
+</resources>
