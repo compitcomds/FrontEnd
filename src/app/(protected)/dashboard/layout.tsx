@@ -6,7 +6,7 @@ import { useRouter } from "next/navigation";
 import { useQuery } from "@tanstack/react-query";
 import { getAccessToken } from "@/_action/action";
 import axiosInstance from "@/_lib/axiosInstance";
-
+import Home from "@/app/page";
 export default function AuthenticatedLayout({
   children,
 }: {
@@ -52,15 +52,7 @@ export default function AuthenticatedLayout({
         <aside className="sidebar">
           <h2>Doctor Dashboard</h2>
           <ul>
-            <li>
-              <a href="/dashboard/doctor">Home</a>
-            </li>
-            <li>
-              <a href="/dashboard/doctor/patients">Patients</a>
-            </li>
-            <li>
-              <a href="/dashboard/doctor/schedule">Schedule</a>
-            </li>
+          <Home/>
           </ul>
         </aside>
         <main className="content">{children}</main>

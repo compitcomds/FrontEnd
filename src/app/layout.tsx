@@ -16,26 +16,17 @@ export default function RootLayout({
       <body className="bg-gray-500">
         <ClientWrapper>
           <div className="z-50 flex gap-3">
+            <Link className="bg-amber-300 px-2 m-1 rounded" href="/">
+              Home
+            </Link>
             <Link className="bg-amber-300 px-2 m-1 rounded" href="/register">
               register
-            </Link>
-            <Link className="bg-amber-300 px-2 m-1 rounded" href="/">
-              home
             </Link>
             <Link className="bg-amber-300 px-2 m-1 rounded" href="/login">
               login
             </Link>
-            <Link
-              className="bg-amber-300 px-2 m-1 rounded"
-              href="/dashboard/patient"
-            >
-              p dashboard
-            </Link>
-            <Link
-              className="bg-amber-300 px-2 m-1 rounded"
-              href="/dashboard/doctor"
-            >
-              Doc dashboard
+            <Link className="bg-amber-300 px-2 m-1 rounded" href="/dashboard">
+              dashboard
             </Link>
             <Button onClick={removeAccessToken}>Logout</Button>
           </div>
